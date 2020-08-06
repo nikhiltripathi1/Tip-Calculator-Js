@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Tip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <main id='container'>
+        <h1>Quick Tip</h1>
+    
+
+    <section>
+        <div class="bill">
+            <label for='yourBill'>Bill</label>
+            <input type="number" placeholder="your bill" id="yourBill" />
+        </div>
+        <div>
+            <div class="space-between">
+                <label for="tipInput">Select Tip</label>
+                <span id='tipPercent'>0%</span>
+            </div>
+            <div>
+                <input type="range" id="tipInput" value="0" class="range"/>
+            </div>
+        </div>
+        <div class="space-between">
+            <span>Tip</span>
+            <span id="tipValue"></span>
+        </div>
+        <hr />
+        <div class="space-between total">
+            <span>Total</span>
+            <span id="totalWithTip"></span>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div class="space-between">
+                <label for="splitInput">Select Tip</label>
+                <span id='splitValue'>1 Person</span>
+            </div>
+            <div>
+                <input type="range" id="splitInput" value="1" min="1" max="20" class="range" />
+            </div>
+        </div>
+        <div class="space-between">
+            <span>Bill Each</span>
+            <span id="billEach"></span>
+        </div>
+        <div class="space-between">
+            <span>Tip Each</span>
+            <span id="tipEach"></span>
+        </div>
+    </section>
+
+</main>
+<script type="text/javascript" src="./script.js" ></script>
+
+</body>
+</html>
